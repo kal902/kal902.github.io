@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaleab Nigusse - Software Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="min-h-screen bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-6 relative z-10">
+      <div class="text-white font-medium text-xl">Kaleab Nigusse</div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#" class="text-white hover:text-white/80 transition-colors">
+          Home
+        </a>
+        <a href="#projects" class="text-white hover:text-white/80 transition-colors">
+          Projects
+        </a>
+        <a href="#skills" class="text-white hover:text-white/80 transition-colors">
+          Skills
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-white" id="mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Mobile Navigation Menu -->
+      <div class="absolute top-full left-0 right-0 bg-blue-600 md:hidden p-4 shadow-lg hidden" id="mobile-menu">
+        <div class="flex flex-col space-y-4">
+          <a href="index.html" class="text-white hover:text-white/80 transition-colors">
+            Home
+          </a>
+          <a href="projects.html" class="text-white hover:text-white/80 transition-colors">
+            Projects
+          </a>
+          <a href="skills.html" class="text-white hover:text-white/80 transition-colors">
+            Skills
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center py-12 md:py-16 lg:py-24">
+        <!-- Left Column - Text Content -->
+        <div class="w-full md:w-1/2 mb-12 md:mb-0">
+          <div class="text-white">
+            <p class="text-lg mb-2">Software Developer</p>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Kaleab Nigusse</h1>
+            <p class="text-xs sm:text-base mb-6 sm:mb-8 max-w-prose">
+              A passionate Software Developer with a strong focus on Android Development using native Java, as well as
+              Web Backends,
+              APIs, and Security-Focused Applications. I have extensive knowledge of network protocols and operating
+              systems, including
+              Linux, Android, and Windows. I enjoy building programs from scratch and bringing ideas to life through
+              clean, efficient code.
+            </p>
+
+            <div class="mb-6 sm:mb-8">
+              <h3 class="text-lg mb-3 font-bold sm:mb-4">Few technologies and frameworks I've been working with</h3>
+              <div class="grid grid-cols-2 gap-2 sm:gap-4">
+                <div class="space-y-2 sm:space-y-3">
+                  <p>Android - Java</p>
+                  <p>PHP - Laravel</p>
+                  <p>Computer Vision - OpenCv</p>
+                </div>
+                <div class="space-y-2 sm:space-y-3">
+                  <p>Django, Flask, Fastapi</p>
+                  <p>NodeJs express.js</p>
+                  <p>Tailwindcss</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://github.com/kal902"
+              class="inline-flex items-center gap-2 bg-white text-blue-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium hover:bg-opacity-90 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-github">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              Github Account
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column - App Screenshots -->
+        <div class="w-full md:w-1/2 relative">
+          <div class="relative h-[300px] sm:h-[400px] md:h-[500px] w-full">
+            <img src="images/profile.png" alt="Mobile app screenshots" class="object-contain w-full h-full">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Projects Section -->
+    <div id="projects" class="w-full py-8 sm:py-8 md:py-10" style="background-color: rgb(237, 240, 247);">
+      <div class="container px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 sm:mb-10">
+          <h2 style="color: rgb(41, 98, 255);">Featured Projects</h2>
+          <p style="color: rgb(156, 163, 173); ">Some Projects I've Built</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+
+          <!-- Project Card 1 -->
+          <div onclick="window.open('https://github.com/kal902/wifibully', '_blank')"
+            class="justify-center rounded-xl p-4 relative cursor-pointer" style="background: white;">
+            <img src="images/wifibully.png" class="object-cover" alt="Wifibully"
+              style="border-radius: 4%; height: 250px; width: 100%;">
+            <h3 class="pt-5">Wifibully</h3>
+            <p class="mt-2 line-clamp"
+              style="color: rgb(156, 163, 173); line-height: 25px; height: 75px; overflow: hidden;">A Linux app written
+              in Python using Scapy framework that helps to limit internet access of wireless AP clients via ARP
+              spoofing.</p>
+            <img src="images/github-logo.png" alt="GitHub"
+              class="absolute bottom-3 right-3 w-5 h-5 opacity-70 hover:opacity-100">
+          </div>
+
+          <!-- Project Card 2 -->
+          <div onclick="window.open('https://github.com/kal902/omdb_api', '_blank')"
+            class="justify-center rounded-xl p-4 relative cursor-pointer" style="background: white;"><img src="images/omdb2.jfif"
+              class="object-cover" alt="omdb_api" style="border-radius: 4%; height: 250px; width: 100%;">
+            <h3 class="pt-5">omdb_api</h3>
+            <p class="mt-2 line-clamp"
+              style="color: rgb(156, 163, 173); line-height: 25px; height: 75px; overflow: hidden;">A Java API
+              client library for interfacing with the OMDB (Open Movie Database) API, enabling efficient
+              querying of the movie datbase.</p>
+            <img src="images/github-logo.png" alt="GitHub"
+              class="absolute bottom-3 right-3 w-5 h-5 opacity-70 hover:opacity-100">
+          </div>
+
+          <!-- Project Card 3 -->
+          <div onclick="window.open('https://github.com/kal902/poster_downloader', '_blank')"
+            class="justify-center rounded-xl p-4 relative cursor-pointer" style="background: white;"><img
+              src="images/posterdownloader.png" class="object-cover" alt="poster downloader"
+              style="border-radius: 4%; height: 250px; width: 100%;">
+            <h3 class="pt-5">PosterDownloader</h3>
+            <p class="mt-2 line-clamp"
+              style="color: rgb(156, 163, 173); line-height: 25px; height: 75px; overflow: hidden;">WiFi Bully
+              is a Linux app in Python using Scapy to limit internet access via ARP spoofing and MITM.</p>
+            <img src="images/github-logo.png" alt="GitHub"
+              class="absolute bottom-3 right-3 w-5 h-5 opacity-70 hover:opacity-100">
+          </div>
+
+
+          <!-- Project Card 4 -->
+          <div onclick="window.open('https://github.com/kal902/getmymovies', '_blank')"
+            class="justify-center rounded-xl p-4 relative cursor-pointer" style="background: white;"><img src="images/gmm.jpg"
+              class="object-cover" alt="gmm" style="border-radius: 4%; height: 250px; width: 100%;">
+            <h3 class="pt-5">GetMyMovies</h3>
+            <p class="mt-2 text-base md:text-sm leading-6" style="color: rgb(156, 163, 173);">
+              Software solution for movie houses/shops to streamline movie selection and distribution while reducing
+              physical interaction during the COVID-19 pandemic. Customers can browse, select, and download movies via
+              a
+              local server, while the shopkeeper is notified of activity and payment. A desktop program also allows
+              the keeper to categorize movies, add posters, and enable streaming, creating a safer, efficient
+              process.
+            </p>
+            <img src="images/github-logo.png" alt="GitHub"
+              class="absolute bottom-3 right-3 w-5 h-5 opacity-70 hover:opacity-100">
+          </div>
+
+          <!-- Project Card 5 -->
+          <div onclick="window.open('https://github.com/kal902/joypad', '_blank')"
+            class="justify-center rounded-xl p-4 relative cursor-pointer" style="background: white;"><img src="images/joypad.png"
+              class="object-cover" alt="joypad" style="border-radius: 4%; height: 250px; width: 100%;">
+            <h3 class="pt-5">Joypad Android</h3>
+            <p class="mt-2 line-clamp"
+              style="color: rgb(156, 163, 173); line-height: 25px; height: 75px; overflow: hidden;">use your android
+              phone
+              as a joypad connecting to pc, also have a desktop program to edit configs</p>
+            <img src="images/github-logo.png" alt="GitHub"
+              class="absolute bottom-3 right-3 w-5 h-5 opacity-70 hover:opacity-100">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="w-full py-12 sm:py-5 md:py-5" style="background-color: rgb(237, 240, 247);">
+      <div class="container  px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 sm:mb-10">
+          <h2 style="color: rgb(41, 98, 255);">My Skills & Expertise</h2>
+          <!--<p style="color: rgb(156, 163, 173); ">Technologies and tools I've worked with</p>-->
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+
+          <!-- Skill Card 1 -->
+          <div id="10" class="col-span-1 sm:col-span-2 lg:col-span-2 flex">
+            <div class="p-6 border border-gray-400 rounded-lg flex flex-col w-full">
+              <img alt="OpenCv" src="images/opencv.png" loading="lazy" width="50" height="50">
+
+              <h3 class="SkillsItemTitle pt-5">OpenCv</h3>
+
+              <!-- Matching the 5px padding-top exactly -->
+              <p class="SkillsItemDescriptionBig text-justify text-gray-400 text-sm" style="padding-top: 5px;">
+                Leveraging
+                OpenCV's robust features, I develop advanced computer vision applications for object and face
+                recognition, as well as gesture tracking. Proficient in Python and Java (Android/desktop), I implement
+                real-time solutions that enable interactive control through body and hand gestures. I design systems
+                that use real-time gesture tracking for controlling devices and software across both mobile and desktop
+                platforms.
+              </p>
+
+              <p class="SkillsItemDescription truncate text-gray-400 text-sm pt-2">
+                Android java . desktop java&python </p>
+
+            </div>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Java Language" src="images/java.webp" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">Java Language</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Java was the first
+                programming language I learned. I used it to build APIs with Spring Boot, explore object-oriented
+                programming, and learn/apply design patterns while developing applications. I also used Java to create
+                Android
+                apps.</p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">Android .
+                Spring Boot . Jar Files . War Files . Tomcat</p>
+            </div>
+          </div>
+
+          <!-- skill Card 3 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Android Development" src="images/python.ico" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">Python</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">
+                With 8 years of practising Python, it has become my go-to language for many daily tasks. From networking
+                tools and penetration testing scripts to automation, APIs, and desktop applications. leverage Pythons
+                versatility for building scalable
+                systems, automating repetitive tasks, and tackling complex technical challenges across various domains.
+              </p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">Optimized
+                Apps . Android Apps</p>
+            </div>
+          </div>
+
+
+          <!-- Skill Card 4 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="PHP Language" src="images/php.webp" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">PHP Language</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Beginner Level In
+                PHP and Laravel Mainly Im Currently Using PHP To Build Restful Api's on Laravel With Mysql, Swagger,
+                Auth, Return Html, Css Views From Api With Different Response Types, also Yii2 Framework With Mysql
+                Connection, Json Response</p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">Laravel .
+                Yii2 . Mysql . Auth</p>
+            </div>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Gradle" src="images/gradle.webp" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">Gradle</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Im Using Grovvy,
+                Kotlin To Build Gradle Plugins To Configure Android projects or Spring Boot Projects Also Deploy Plugins
+                On Gradle Portal Mainly The Plugins For Configuring Dynamic Tasks Or Libraries</p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">Gradle
+                Portal . Groovy . Dependencies Plugins</p>
+            </div>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Version Control" src="images/git.webp" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">Version Control</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Git is My
+                Favourite Tool, Im Using Git Everyday To Manage My Projects Via Github, Bitbucket and Configure
+                Local Git Hooks To Manage Development Phase With Specific Actions, Tasks Via Git Hooks and Configure CI
+                With Git Hooks., Create Branches, Commits, Releases and Publish Projects On Github
+              </p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">Github .
+                Gitlab . Git Hooks . Source Tree . Git Commands</p>
+            </div>
+          </div>
+
+          <!-- Skill Card 7 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Android Development" src="images/android.webp" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">Android Development</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Create Android
+                Applications With Java and Gradle DSL With Latest Android Technologies Like Hilt, Jetpack Compose,
+                Esspresso, Single Activity Applications, Multi Modular Apps, Networking Apps, Deal With Offline Caching
+                Experience and
+                Familiar With Firebase, Google Services...</p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">Optimized
+                Apps . Android Apps</p>
+            </div>
+          </div>
+
+          <!-- Skill Card 8 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Javascript Language" src="images/js.webp" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">Javascript Language</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Use Javascript To
+                Create Website Backends, Also Most Of Javascript Files Written With Jsx (ECMA +6) And
+                The Backend Side With Express.js To Build Restful Api</p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">
+                Jquery . Express.js</p>
+            </div>
+          </div>
+
+
+          <!-- Skill Card 9 -->
+          <div id="10" class="col-span-1 sm:col-span-2 lg:col-span-2 flex">
+            <div class="p-6 border border-gray-400 rounded-lg flex flex-col w-full">
+              <img alt="Networking" src="images/Networking.png" loading="lazy" width="50" height="50">
+
+              <h3 class="SkillsItemTitle pt-5">Networking/ Network Programming</h3>
+
+              <!-- Matching the 5px padding-top exactly -->
+              <p class="SkillsItemDescriptionBig text-justify text-gray-400 text-sm" style="padding-top: 5px;">I have a
+                deep understanding of how TCP/IP works, including the ability to use raw sockets to craft
+                custom network packets and interact with protocols at the packet level. I'm familiar with the process of
+                reverse-engineering unknown protocols and understand the complexity involved in reimplementing parts of
+                the kernel's networking logic in user space. This low-level experience has given me strong insight into
+                how data moves through networks and how protocols behave beneath the abstraction of high-level APIs.
+              </p>
+
+              <p class="SkillsItemDescription truncate text-gray-400 text-sm pt-2">
+                raw sockets. network programming. reverse engineering. network protocols.
+              </p>
+            </div>
+          </div>
+
+
+          <!-- Skill Card 10 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Web & Wireless Penetration Testing" src="images/pentest.png" loading="lazy" width="50px"
+                height="50px">
+              <h3 class="SkillsItemTitle pt-5">Web & Wireless Penetration Testing</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Skilled in web and
+                wireless penetration testing using tools like Metasploit, Burp Suite, SQLMap, and Nmap for web app
+                assessment, alongside airmon-ng, aircrack-ng, and aireplay-ng for wireless attacks. Use Scapy to craft
+                custom packets for traffic analysis, firewall testing, and simulating real-world attack vectors across
+                different network layers.</p>
+              <p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">
+                Metasploit . Burp Suite . Scapy . SQLMap . Nmap</p>
+              </p>
+            </div>
+          </div>
+
+          <!-- Skill Card 11 -->
+          <div class="justify-center">
+            <div
+              style="padding: 1.5em; border-style: solid; border-width: 1px; border-color: rgb(156, 163, 173); border-radius: 10px;">
+              <img alt="Exploit Dev & OS Internals" src="images/exp.png" loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle pt-5">Exploit Dev & OS Internals</h3>
+              <p class="SkillsItemDescriptionBig"
+                style="color: rgb(156, 163, 173); height: 150px; font-size: small; padding-top: 5px;">Skilled in
+                interacting with low-level OS APIs using C++ and Python(ctypes). Experienced in writing Python
+                scripts for Immunity Debugger to automate process analysis and memory inspection. Well-versed in binary
+                exploitation concepts and debugging workflows. Possess a deep understanding of Android internals, as
+                well as core Linux and Windows OS architecture and behavior.</p>
+              <!--<p class="SkillsItemDescription truncate" style="color: rgb(156, 163, 173); font-size: small;">
+                Immunity Debugger . C++ . Python . Linux Kernel . Windows Kernel</p>-->
+              </p>
+            </div>
+          </div>
+
+          <!--
+          <div id="10" class="col-span-1 sm:col-span-2 lg:col-span-2 flex">
+            <div class="p-6 border border-gray-400 rounded-lg flex flex-col w-full">
+              <img alt="Networking" src="Networking.png" loading="lazy" width="50" height="50">
+
+              <h3 class="SkillsItemTitle pt-5">Networking/ Network Programming</h3>
+
+              <p id="desc10" class="SkillsItemDescriptionBig text-justify text-gray-400 text-sm"
+                style="padding-top: 5px; max-height: 4.5em; overflow: hidden;">
+                I have a deep understanding of how TCP/IP works, including the ability to use raw sockets to craft
+                custom network packets and interact with protocols at the packet level. I'm familiar with the process of
+                reverse-engineering unknown protocols and understand the complexity involved in reimplementing parts of
+                the kernel's networking logic in user space. This low-level experience has given me strong insight into
+                how data moves through networks and how protocols behave beneath the abstraction of high-level APIs.
+              </p>
+              <button
+                onclick="const p=document.getElementById('desc10'); if(p.style.maxHeight){p.style.maxHeight=''; this.textContent='Read Less'}else{p.style.maxHeight='4.5em'; this.textContent='Read More'}"
+                class="text-blue-500 text-sm self-start mt-1">Read More</button>
+
+              <p class="SkillsItemDescription truncate text-gray-400 text-sm pt-2">
+                raw sockets. network programming. reverse engineering. network protocols.
+              </p>
+            </div>
+          </div>-->
+
+
+          <!-- 
+          <div class="col-span-1 sm:col-span-2 lg:col-span-2 h-full">
+            <div class="h-full flex flex-col justify-between p-6 border border-gray-400 rounded-lg">
+              <img alt="Android Development"
+                src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/android.webp"
+                loading="lazy" width="50px" height="50px">
+              <h3 class="SkillsItemTitle">Networking/Network Programming</h3>
+              <p class="SkillsItemDescriptionBig text-justify text-gray-400 text-sm ">
+                I have a deep understanding of how TCP/IP works, including the ability to use raw sockets to craft
+                custom network packets and interact with protocols at the packet level. I'm familiar with the process of
+                reverse-engineering unknown protocols and understand the complexity involved in reimplementing parts of
+                the kernel's networking logic in user space. This low-level experience has given me strong insight into
+                how data moves through networks and how protocols behave beneath the abstraction of high-level APIs.
+              </p>
+              <p class="SkillsItemDescription truncate text-gray-400 text-sm pt-2">
+                raw sockets. network programming. reverse engineering. network protocols.
+              </p>
+            </div>
+          </div> -->
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="p-5 bg-gray-100">
+      <hr>
+      <div
+        class="items-center h-16 text-gray-600 md:flex md:justify-between lg:flex lg:justify-between xl:flex xl:justify-between">
+        <p>Kaleab Nigusse (V 1.1.2) - Copyright @ 2025 Personal Website</p>
+
+      </div>
+    </footer>
+  </div>
+
+  <script>
+
+    function toggleReadMore() {
+      var desc = document.getElementById('movie-description');
+      var btn = event.target;
+      var card = event.target.closest('.justify-center');
+      var otherCards = document.querySelectorAll('.justify-center');
+      var blurBackground = document.getElementById('blur-background');
+
+      // If "Read More" is clicked, expand the description and blur other cards
+      if (desc.style.height === '75px') {
+        desc.style.height = 'auto';
+        btn.innerText = 'Read Less';
+        // Apply blur to other cards
+        otherCards.forEach(function (card) {
+          card.style.filter = 'blur(5px)';
+        });
+        // Highlight the expanded card
+        card.style.filter = 'none'; // Keep the expanded card normal
+        blurBackground.style.display = 'block'; // Show blur background
+      } else {
+        desc.style.height = '75px';
+        btn.innerText = 'Read More';
+        // Remove blur from other cards
+        otherCards.forEach(function (card) {
+          card.style.filter = 'none';
+        });
+        blurBackground.style.display = 'none'; // Hide blur background
+      }
+    }
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+
+</html>
